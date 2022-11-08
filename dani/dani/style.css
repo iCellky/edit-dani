@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(144deg, rgba(0,0,0,1) 0%, rgba(91,91,94,1) 35%, rgba(127,128,130,1) 67%, rgba(196,201,203,1) 100%);
+    background-repeat: no-repeat;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.navegacao{
+  position: relative;
+  top: 23px;
+  
+}
+
+li{
+  display: flex;
+  list-style-type: none;
+  gap: 270px;
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.fone-left {
+  position: relative;
+  top: 180px;
+
+}
+
+.fone-right {
+  position: relative;
+  transform: rotate(17deg);
+  right: 100px;
+  bottom: 20px;
+}
+
+.container .text {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.container .text h1 {
+  font-size: 35px;
+  color: #000;
+  
+}
+
+.container .text h2 {
+  color: #000;
+  font-size: 30px;
+}
+
+.container .text p {
+  color: #000;
+  text-align: end;
+  font-size: 16px;
+}
+
+.container .text a {
+  padding: 10px 60px;
+  border-radius: 20px;
+  background-color: red;
+  color: #000;
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  img{
+    width: 20%;
+  }
+  .fone-left {
+    position: relative;
+    top: 0px;
+  }
+}
